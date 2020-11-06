@@ -12,8 +12,8 @@ This git repository explains how to use selected data science frameworks. Furthe
  - concepts (Python)
 
 ### Frameworks for Learning to Rank (L2R): 
- - Lemur Project (?)
- - IRGAN framework (?)
+ - Lemur Project (Java)
+ - IRGAN framework (Python)
 
 
 
@@ -96,9 +96,22 @@ More Information:
 https://www.uni-ulm.de/einrichtungen/kiz/service-katalog/high-performance-computing/bwunicluster-20/
 
 You have the possibility to run jobs on the bwUniCluster. There are GPUs provided. In contrast to bwCloud you don't have any administrative rights. If there is any missing software you will probably face some problems. 
-You can install python libraries with `pip3 install --user <library>`. 
+But you can install python libraries with 
 
-For the bwUniCluster VPN and a 2FactorAuth is absolutely necessary. You can use 
+```bash
+$ pip3 install --user <library>
+```
+
+if 
+
+```bash
+$ pip3 install <library>
+```
+
+doesn't work.
+
+### Access
+For the bwUniCluster **VPN** and a **2FactorAuth** is absolutely necessary. You can use 
 `ssh ul_USERNAME@uc2.scc.kit.edu` to connect to the login node of the cluster. 
 
 You can submit a job by creating a file `job.sh`: 
@@ -118,7 +131,13 @@ $ sbatch -p gpu_4 job.sh
 ```
 [--> Information to Batch Queues](https://wiki.bwhpc.de/e/BwUniCluster_2.0_Batch_Queues)
 
-More information: 
+
+### Jupyter Lab Interface 
+Recently there also exists a Jupyter Lab interface. A documentation is given at: https://wiki.bwhpc.de/e/Jupyter_at_SCC
+
+**VPN** and a **2FactorAuth** is again absolutely necessary. Besides these restricitions it is convienient to get access to the cluster by the Jupyter Lab interface. 
+
+### More information: 
  - [Hardware and Architecture](https://wiki.bwhpc.de/e/BwUniCluster_2.0_Hardware_and_Architecture)
  - [BwUniCluster_2 Wiki](https://wiki.bwhpc.de/e/Category:BwUniCluster_2.0)
 
