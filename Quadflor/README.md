@@ -69,3 +69,9 @@ $ cd Code/lucid_ml/
 $ mkdir tmp/
 $ python run.py -f mlpsoph -t -k file_paths.json --fixed_folds --folds=1 -v --batch_size=2000 -e 2 --val-size=0.2 --patience=10 --tf-model-path=tmp --max_features=25000 --num_steps_before_validation=2000 --learning_rate=0.001 --dropout=0.5 --memory=0.3 -C ../../Experiments/final_mlp_experiments.cfg -o final_mlp.csv --embedding_size=0 --ngram_limit=2 --optimize_threshold 
 ```
+
+The last line of code runs the `final_mlp` experiments. There are also other possibilities stated in the 3rd and 5th line of the following files, which are located in the `./Quadflor/Experiments/` folder: 
+- `cnn_final_experiments.cfg`
+- `final_base_mlp_experiments.cfg`
+- `final_mlp_experiments.cfg`
+- `lstm_experiments_final.cfg`
