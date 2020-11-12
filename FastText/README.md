@@ -19,7 +19,6 @@ https://arxiv.org/pdf/1607.04606.pdf
 https://arxiv.org/pdf/1607.01759.pdf 
   - on Compressed Classification: 
 https://arxiv.org/pdf/1612.03651.pdf 
-
 - Code: 
   - https://github.com/facebookresearch/fastText 
 - Webpage: 
