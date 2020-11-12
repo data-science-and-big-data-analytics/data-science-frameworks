@@ -154,7 +154,16 @@ Recently there also exists a Jupyter Lab interface. A documentation is given at:
 
 
 ## Google Colab
-...
+- https://colab.research.google.com
+
+Google Colab is a from Google provided platform, which provides GPU ressources. 
+Its only use case are **Python Jupyter Notebooks**!
+You can easily share one notebook with your team mates and work together. 
+
+You also can install additional libraries, if needed:
+
+```[ ] !pip install matplotlib-venn```
+
 
 
 ## SSH Key
