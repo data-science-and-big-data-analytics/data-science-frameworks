@@ -1,5 +1,11 @@
 # IRGAN
+All files, which are needed to run the framework, will be downloaded with the commands, stated in the following sections. 
 
+
+
+# A. General Information
+- Authors:
+  - Jun Wang, Lantao Yu, Weinan Zhang, Yu Gong, Yinghui Xu, Benyou Wang, Peng Zhang, Dell Zhang
 - Paper: 
   - https://arxiv.org/pdf/1705.10513.pdf
 - Code: 
@@ -7,13 +13,13 @@
 
 
 
-# Requirements
+# B. Requirements
 - Git
 - Python (Anaconda)
 
 
 
-# Installation
+# C. Installation
 To install IRGAN we need [Anaconda](https://www.anaconda.com/), which is more powerful, but also more complex than virtualenv. Check the webpage of anaconda for the newest verson. We will install version 2020.07 here:
 
 ```bash
@@ -36,7 +42,12 @@ $ conda create --name IRGAN-venv --file PyTorch-IRGAN/requirements.txt
 
 
 
-# Usage Example
+# D. Data
+Example data is already provided within the IRGAN framework
+
+
+
+# E. Usage Example
 ```bash
 $ conda activate IRGAN-venv
 $ cd PyTorch-IRGAN/

@@ -1,5 +1,13 @@
 # TextGCN
 
+## In this folder you will find: 
+All files, which are needed to run the framework, will be downloaded with the commands, stated in the following sections. 
+
+
+
+# A. General Information
+- Authors
+  - Liang Yao, Chengsheng Mao, Yuan Luo
 - Paper: 
   - https://arxiv.org/pdf/1809.05679.pdf
 - Code: 
@@ -7,7 +15,7 @@
 
 
 
-# Requirements
+# B. Requirements
  - Git
  - Python3.7 (tensorflow==1.14, nltk, networkx, scipy, sklearn)
 
@@ -17,7 +25,7 @@ $ sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 
 
-# Installation
+# C. Installation
 ```bash
 # Inside the /data-science-frameworks/TextGCN/ folder
 $ git clone https://github.com/yao8839836/text_gcn.git
@@ -29,7 +37,18 @@ $ deactivate
 
 
 
-# Usage Example
+# D. Data
+Example data is already included in the frameworks Git-Repository
+Following datasets are available: 
+- 20ng 
+- R8 
+- R52 
+- ohsumed 
+- mr
+
+
+
+# E. Usage Example
 ```bash
 # Inside the /data-science-frameworks/TextGCN/ folder
 $ source TextGCN-venv/bin/activate
@@ -42,11 +61,11 @@ $ python3.7 train.py mr
 $ deactivate
 ```
 
-Instead of mr you may also try to use `20ng`, `R8`, `R52`, or `ohsumed`. They represent all different datasets, which are described in the paper. 
+Instead of `mr` you may also try to use `20ng`, `R8`, `R52`, or `ohsumed`. They represent all different datasets, which are described in the paper. 
 
 
 
-# Visualization
+# F. Visualization
 To use the visualization tool you need to install matplotlib: 
 
 

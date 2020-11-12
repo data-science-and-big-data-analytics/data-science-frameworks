@@ -1,23 +1,41 @@
 # FastText
 
-- Paper: 
-  - https://arxiv.org/pdf/1607.04606.pdf
-  - https://arxiv.org/pdf/1607.01759.pdf
-  - https://arxiv.org/pdf/1612.03651.pdf
+## In this folder you will find: 
+- `evaluation.py`
+
+Python script for visualize the results from the Word Representation Learning.
+
+All other files, which are needed to run the framework, will be downloaded with the commands, stated in the following sections. 
+
+
+
+# A. General Information
+- Authors
+  - FacebookResearch (https://research.fb.com/)
+- Paper 
+  - on Word Representation: 
+https://arxiv.org/pdf/1607.04606.pdf
+  - on Text Classification: 
+https://arxiv.org/pdf/1607.01759.pdf 
+  - on Compressed Classification: 
+https://arxiv.org/pdf/1612.03651.pdf 
+
 - Code: 
   - https://github.com/facebookresearch/fastText 
 - Webpage: 
   - https://fasttext.cc/
 
 
-# Requirements
+
+# B. Requirements
  - g++-4.7.2 or newer (C++11 support)
  - make
  - Perl
  - Python (NumPy + SciPy + MatPlotLib + Pandas)
 
 
-# Installation
+
+# C. Installation
 ```bash
 # Inside the /data-science-frameworks/FastText/ folder
 $ wget https://github.com/facebookresearch/fastText/archive/v0.9.2.zip
@@ -29,6 +47,7 @@ $ cd ..
 ```
 
 
+
 # Usage Example
 FastText has two main use cases: 
 - Word Representation Learning
@@ -36,7 +55,7 @@ FastText has two main use cases:
 
 
 ## 1. Word Representation Learning:
-### Get data: 
+### D. Get Data for Word Representation Learning: 
 You can get example data for word representation learning with the following commands:
 ```bash
 # Inside the /data-science-frameworks/FastText/ folder
@@ -59,7 +78,7 @@ The `fil9` is the cleaned data consisting only english text.
 The `rw.txt` file consists the Stanford Rare Word (RW) Similarity Dataset. From this dataset the `queries.txt` is derived. 
 
 
-### Execution: 
+### E. Run Framework for Word Representation Learning: 
 ```bash
 # Inside the /data-science-frameworks/FastText/ folder
 $ ./fastText-0.9.2/fasttext skipgram -input data/fil9 -output result/fil9
@@ -72,7 +91,7 @@ You will get two files: `fil9.vec` and `fil9.bin`.
 `fil9.bin` contains the parameters of the model. 
 
 
-### Evaluation: 
+### F. Visualization for Word Representation Learning: 
 The evaluation visualizes the results with python. You should create a new python virtual environment and install the required packages in this environment. 
 
 ```bash
@@ -101,7 +120,7 @@ You will get a picture `evaluation.png` which takes random 50 words and word vec
 
 
 ## 2. Text Classification:
-### Get data: 
+### D. Get Data for Text Classification: 
 You can get example data for text classification with the following commands:
 ```bash
 # Inside the /data-science-frameworks/FastText/ folder
@@ -120,7 +139,7 @@ $ cat data/dbpedia_csv/test.csv | normalize_text > data/dbpedia.test
 The `dbpedia_csv/` folder consists of the DBPedia Ontology Classification Dataset. The `train.csv` and `test.csv` files are cleaned with the `normalize_text()` function. 
 
 
-### Execution: 
+### E. Run Framework for Text Classification: 
 ```bash
 # Inside the /data-science-frameworks/FastText/ folder
 
@@ -131,7 +150,7 @@ $ ./fastText-0.9.2/fasttext supervised -input data/dbpedia.train -output result/
 You will get the two files: `dbpedia.vec` and `dbpedia.bin` which represent the model trained with the `dbpedia.train` file. 
 
 
-### Evaluation: 
+### F. Evaluation for Text Classification: 
 ```bash
 # Test the model with the test set
 # Will print precision (P@1) and recall (R@1)

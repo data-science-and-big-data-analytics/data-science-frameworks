@@ -1,5 +1,18 @@
 # Quadflor
 
+## In this folder you will find: 
+- `econbiz.csv.tar.bz`
+- `pubmed.csv.tar.bz`
+
+Both files contain the 10000 lines of their correpsonding original files, which you can download from the Kaggle webpage. 
+
+All other files, which are needed to run the framework, will be downloaded with the commands, stated in the following sections. 
+
+
+
+# A. General Information
+- Authors
+  - Florian Mai, Lukas Galke, and Ansgar Scherp
 - Paper: 
   - https://arxiv.org/pdf/1801.06717.pdf
 - Code: 
@@ -7,10 +20,10 @@
 
 
 
-# Requirements
+# B. Requirements
 - Git
 - Python 3.7
-- libatlas-base-dev, gfortran , and build-essential
+- libatlas-base-dev, gfortran, and build-essential
 
 Perhaps you have to add the following repo to be able to install Python3.7:
 ```bash
@@ -19,7 +32,7 @@ $ sudo add-apt-repository ppa:deadsnakes/ppa
 
 
 
-# Installation
+# C. Installation
 ```bash
 # Inside the /data-science-frameworks/Quadflor/ folder
 $ git clone https://github.com/florianmai/Quadflor.git
@@ -36,18 +49,7 @@ $ cd ../../
 
 
 
-# Get Pretrained Embeddings Data:
-```bash
-# Inside the /data-science-frameworks/Quadflor/ folder
-$ cd Quadflor/Resources/
-$ chmod +x get_glove.sh
-$ ./get_glove.
-$ cd ../../
-```
-
-
-
-# Get Example Dataset: 
+# D. Get Example Dataset: 
 Download the [econbiz.csv and pubmed.csv](https://www.kaggle.com/hsrobo/titlebased-semantic-subject-indexing) files and copy them to the folder `Resources/` .
 
 Or take a small excerpt of the above stated dataset: 
@@ -59,8 +61,20 @@ $ mv econbiz.csv pubmed.csv Quadflor/Resources/
 ```
 
 
+## Get Pretrained Embeddings Data:
+For some experiements you need pretrained data. You can get them with: 
 
-# Usage Example
+```bash
+# Inside the /data-science-frameworks/Quadflor/ folder
+$ cd Quadflor/Resources/
+$ chmod +x get_glove.sh
+$ ./get_glove.
+$ cd ../../
+```
+
+
+
+# E. Usage Example
 ```bash
 # Inside the /data-science-frameworks/Quadflor/ folder
 $ cd Quadflor/

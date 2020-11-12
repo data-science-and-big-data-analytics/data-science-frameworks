@@ -1,4 +1,14 @@
 # Lemur
+
+## In this folder you will find: 
+- `RankLib.jar`: For convienence, the current newest version (2.14) of RankLib from the Lemur project is already contained in this repository
+- `MQ2008.tar.bz`: Provided example data
+
+For this framework you don't have to download anything. But you can find all the ressources online, too. 
+
+
+
+# A. General Information
 - Paper: 
   - [1] C.J.C. Burges, T. Shaked, E. Renshaw, A. Lazier, M. Deeds, N. Hamilton and G. Hullender. Learning to rank using gradient descent. In Proc. of ICML, pages 89-96, 2005.
   - [2] Y. Freund, R. Iyer, R. Schapire, and Y. Singer. An efficient boosting algorithm for combining preferences. The Journal of Machine Learning Research, 4: 933-969, 2003.
@@ -16,17 +26,17 @@
 
 
 
-# Requirements
+# B. Requirements
  - Java
 
 
 
-# Installation
+# C. Installation
 This repository already contains the current newest version (2.14) of `RankLib.jar`. You can also download `RankLib.jar` from https://sourceforge.net/projects/lemur/files/lemur/. 
 
 
 
-# Data
+# D. Data
 There is already the `MQ2008` dataset from [LETOR](http://research.microsoft.com/en-us/um/beijing/projects/letor/letor4dataset.aspx) as a bzip2 compressed file (`'MQ2008.tar.bz'`) given. To unpack it use the following command: 
 
 ```bash
@@ -38,7 +48,7 @@ You can also download other datasets of LETOR from the follwing OneDrive link: h
 
 
 
-# Usage Example
+# E. Usage Example
 We will state some examples on how to use the framework: 
 
 ## Training on held-out data
@@ -78,7 +88,7 @@ $ java -cp bin/RankLib.jar ciir.umass.edu.features.FeatureManager
 ```
 
 
-## Evaluating previously trained models
+## F. Evaluating previously trained models
 We can evaluate our model on the test dataset with: 
 ```bash
 $ java -jar bin/RankLib.jar -load mymodel.txt -test MQ2008/Fold1/test.txt -metric2T ERR@10 

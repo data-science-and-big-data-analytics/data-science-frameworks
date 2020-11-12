@@ -1,5 +1,16 @@
 # Concepts
 
+## In this folder you will find: 
+- `concepts_example.py`: A provided example file, which you can execute and inspect
+- `concepts_example.ipynb`: A provided Jupyter Notebook, which you can execute and inspect
+
+All other files, which are needed to run the framework, will be downloaded with the commands, stated in the following sections. 
+
+
+
+# A. General Information
+- Authors
+  - Christian Lindig
 - Paper: 
   - http://www.st.cs.uni-saarland.de/publications/files/lindig-fca-2000.pdf 
 - Code: 
@@ -7,13 +18,13 @@
 
 
 
-# Requirements
+# B. Requirements
  - Python
  - Graphviz
 
 
 
-# Installation
+# C. Installation
 Install the concept library in the Concept-venv virtual python environment: 
 ```bash
 # Inside the /data-science-frameworks/Concepts/ folder
@@ -25,7 +36,12 @@ $ deactivate
 
 
 
-# Usage 
+# D. Data
+There already exists the files `concepts_example.py` and `concepts_example.ipynb` within this repository. 
+
+
+
+# E. Usage 
 Import library: 
 ```python
 >>> from concepts import Context
@@ -59,7 +75,7 @@ Visualize the results with graphviz:
 
 
 
-# Example
+# E. Example
 ```bash
 # Activate Concepts-venv environment
 $ source Concepts-venv/bin/activate

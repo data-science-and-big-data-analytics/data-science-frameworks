@@ -16,6 +16,17 @@ This git repository explains how to use selected data science frameworks. Furthe
  - IRGAN framework (Python)
 
 
+## Per framework it is documented:
+
+- **A.** **General information** where to find the code and related papers
+- **B.** Which **requirements** are needed
+- **C.** How to **install** the framework
+- **D.** How to **obtain** (example) files
+- **E.** Explanation **how to use** the framework (on the example files)
+- (**F.** Evaluation or Visualization of the results)
+
+
+
 
 # Tips to Text Preprocessing
 Try to start with small datasets! Preprocess special characters as ä,ö,ü,ß,... 
@@ -142,6 +153,10 @@ Recently there also exists a Jupyter Lab interface. A documentation is given at:
  - [BwUniCluster_2 Wiki](https://wiki.bwhpc.de/e/Category:BwUniCluster_2.0)
 
 
+## Google Colab
+...
+
+
 ## SSH Key
 You often need a SSH Key to be able to connect to the servers. A SSH Key consists of two parts: a public one (often called id_rsa.pub) and a private one (often called id_rsa). Never ever upload or publish your private key! Linux provides several helpful commands to create your SSH Key and copy your public key to the server (https://www.ssh.com/ssh/keygen/): 
  - ssh-keygen -t rsa 
@@ -161,3 +176,14 @@ You can use scp to copy files to the server. If you prefer a UI you can also use
 
 You should always download large datasets directly to the server with the `wget` or `curl` (or a similar) command if possible. Also consider creating Makefiles to simplify repetitive tasks (e.g. for downloading several files multiple times). 
 
+# Different Distributions
+All frameworks are tested with Ubuntu 20.04 LTS distribution. 
+
+## Windows 
+You can probably run all the frameworks also inside the Linux Subsystem on Windows.
+
+## Mac
+You can probably also get most of the frameworks work in the provided terminal on Mac.
+
+## bwCloud
+You can always install and use Linux (e.g. Ubuntu 20.04 LTS) on the **bwCloud**. 

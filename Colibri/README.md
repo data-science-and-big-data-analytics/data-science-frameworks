@@ -1,5 +1,17 @@
 # Colibri
 
+## In this folder you will find: 
+- `colibri/` folder: For convienence, the entire source code of Colibri is already included in this Git-Repository 
+- `doc/` folder: You will find the documentation of this source code, provided together with the source code in this folder
+- `ColibriExample.java`: A provided example file, which you can execute and inspect
+
+For this framework you don't have to download anything. But you can find all the ressources online, too. 
+
+
+
+# A. General Information
+- Authors
+  - Daniel Götzmann
 - Paper: 
   - ./doc/lindig-paper.pdf
   - ./doc/goetzmann-thesis.pdf
@@ -12,12 +24,20 @@
 
 
 
-# Requirements
+# B. Requirements
  - Java
 
 
 
-# Usage 
+# C. and D. Installation and Data
+For this framework you don't have to install anything. 
+
+Instead of provided example data, it is only explained how to use this framework 
+There is an example Java file given in the repository: `ColibriExample.java`
+
+
+
+# E. Usage 
 Import library: 
 ```java
 import colibri.lib.*;
@@ -67,7 +87,7 @@ ComparableSet attributes = concept.getAttributes();
 
 
 
-# Example
+# E. Run Example
 ```bash
 # Compile the java file
 $ javac ColibriExample.java
