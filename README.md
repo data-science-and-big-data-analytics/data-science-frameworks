@@ -196,3 +196,7 @@ You can probably also get most of the frameworks work in the provided terminal o
 
 ## bwCloud
 You can always install and use Linux (e.g. Ubuntu 20.04 LTS) on the **bwCloud**. 
+
+Bookmark this link: https://github.com/data-science-and-big-data-analytics/data-science-frameworks
+
+
